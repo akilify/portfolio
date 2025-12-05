@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="John Mukuwa - Developer, Founder, Registered Nurse building tools for African learners and creators.">
+  <meta name="keywords" content="developer, founder, registered nurse, Zambia, Akilify, VerseELITE, edtech, poetry">
+  <meta name="author" content="John Mukuwa">
+  <title>John Mukuwa — Developer • Founder • Creative • Registered Nurse</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%232563eb%22>👨🏾‍💻</text></svg>">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Chart.js for skills chart -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+<link rel="stylesheet" href="/css/main.min.css">
+</head>
+<body>
+  <!-- Loading Spinner -->
+  <div class="loading-spinner" id="loadingSpinner">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Copy Notification -->
+  <div class="copy-notification" id="copyNotification">Email copied to clipboard!</div>
+
+  <!-- ARIA Live Region -->
+  <div aria-live="polite" aria-atomic="true" class="sr-only" id="ariaLive"></div>
+
+  <a href="#main-content" class="skip-to-content">Skip to main content</a>
+  
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">JM</div>
+        <div>
+          <h1>John Mukuwa</h1>
+          <div class="tagline">Developer • Founder • Creative • Registered Nurse</div>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fas fa-moon"></i>
+        </button>
+        <a href="https://drive.google.com/file/d/your-cv-id/view?usp=sharing" target="_blank" class="btn cv-download">CV <i class="fas fa-download"></i></a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="fade-in">
+          <div class="intro-eyebrow">Founder of Akilify & VerseELITE</div>
+          <h2>I design & build digital products that amplify African learners and creators.</h2>
+          <p>I blend frontend development, product design, clinical experience as a registered nurse, and creative storytelling to make tools that empower communities. Here's a showcase of my flagship work.</p>
+          <div class="actions">
+            <a href="#projects" class="cta"><i class="fas fa-rocket"></i> See Projects</a>
+            <a href="#about" class="btn"><i class="fas fa-user"></i> My Story</a>
+          </div>
+        </div>
+
+        <aside class="profile-card">
+          <div class="profile-avatar">
+            <img src="/images/john-suit.png" 
+                 loading="lazy" 
+                 alt="John Mukuwa"
+                 >
+          </div>
+          <div class="profile-meta">
+            <div class="meta-left">
+              <div class="name">John Mukuwa</div>
+              <small>Lusaka, Zambia<br>Founder, Developer & Registered Nurse</small>
+            </div>
+            <div class="meta-right">
+              <div class="company">Akilify</div>
+              <small>EdTech • AI • Africa</small>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Statistics Section -->
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="stat-number" data-count="500">0</div>
+          <div class="stat-label">Active Users</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number" data-count="200">0</div>
+          <div class="stat-label">Poets Hosted</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number" data-count="15">0</div>
+          <div class="stat-label">Countries Served</div>
+        </div>
+        <div class="stat">
+          <div class="stat-number" data-count="3">0</div>
+          <div class="stat-label">Active Projects</div>
+        </div>
+      </div>
+    
+      <section id="projects" class="projects-section">
+        <div class="section-header">
+          <div>
+            <h3 class="section-title">Featured Projects</h3>
+            <div class="section-subtitle">A selection of products I lead, design, and code — with visuals and links to demos & repos.</div>
+          </div>
+          <a href="https://github.com/akilify" target="_blank" class="view-all">
+            View All Projects <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- Project Filters -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="ai">AI/ML</button>
+          <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+          <button class="filter-btn" data-filter="education">Education</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Akilify -->
+          <article class="project fade-in" data-project="akilify" data-categories="web,ai,education">
+            <div class="thumb" style="background-image:url('/images/akilify.png'); background-size: cover; "></div>
+            <div class="content">
+              <h3>Akilify</h3>
+              <p>An AI-integrated e-learning ecosystem focusing on accessibility and African-centred curricula. Currently serving 500+ users across Zambia.</p>
+              <div class="badges">
+                <span class="badge">React</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">AI/ML</span>
+                <span class="badge">MongoDB</span>
+              </div>
+            </div>
+            
+            <div class="overlay">
+              <div class="buttons">
+                <a href="https://akilify.com" target="_blank" class="view"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                <a href="https://github.com/akilify" target="_blank" class="code"><i class="fab fa-github"></i> View Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: VerseELITE -->
+          <article class="project fade-in" data-project="verseelite" data-categories="web">
+            <div class="thumb" style="background-image:url('/images/VerseELITE.png');background-size:cover;"></div>
+            <div class="content">
+              <h3>VerseELITE</h3>
+              <p>A platform where poets publish, build audiences, and earn — creator-first monetization tools with audio uploads and tipping.</p>
+              <div class="badges">
+                <span class="badge">Next.js</span>
+                <span class="badge">Stripe</span>
+                <span class="badge">PostgreSQL</span>
+                <span class="badge">TypeScript</span>
+              </div>
+            </div>
+            <div class="overlay">
+              <div class="buttons">
+                <a href="https://verseelite.com" target="_blank" class="view"><i class="fas fa-external-link-alt"></i> Live Preview</a>
+                <a href="https://github.com/johnmukuwa/verseelite" target="_blank" class="code"><i class="fab fa-github"></i> View Repo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Mini-LMS -->
+          <article class="project fade-in" data-project="minilms" data-categories="web,education">
+            <div class="thumb" style="background-image:url('/images/lms.png'); background-size: cover; "></div>
+            <div class="content">
+              <h3>Mini-LMS</h3>
+              <p>A lightweight learning dashboard for quick course releases and community discussions. Built for educators who need rapid deployment.</p>
+              <div class="badges">
+                <span class="badge">Vue.js</span>
+                <span class="badge">Firebase</span>
+                <span class="badge">PWA</span>
+                <span class="badge">Tailwind</span>
+              </div>
+            </div>
+            <div class="overlay">
+              <div class="buttons">
+                <a href="https://mini-lms-demo.netlify.app" target="_blank" class="view"><i class="fas fa-external-link-alt"></i> Try Demo</a>
+                <a href="https://github.com/johnmukuwa/mini-lms" target="_blank" class="code"><i class="fab fa-github"></i> Source Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials">
+        <h3 class="section-title">What People Say</h3>
+        <div class="testimonial-cards">
+          <div class="testimonial">
+            <p>"John's work on Akilify transformed our learning platform. The AI integration made personalized learning accessible to students with limited internet access."</p>
+            <div class="author">
+              <strong>Sarah K.</strong>
+              <span>Education Director, Learn Zambia</span>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p>"VerseELITE gave African poets a platform to monetize their craft. The payment system integration with mobile money was a game-changer for our community."</p>
+            <div class="author">
+              <strong>Michael T.</strong>
+              <span>Poet & Community Leader</span>
+            </div>
+          </div>
+          <div class="testimonial">
+            <p>"The nursing protocol app has been invaluable in rural clinics. John's clinical experience combined with technical skills created a tool that truly understands our needs."</p>
+            <div class="author">
+              <strong>Dr. Grace M.</strong>
+              <span>Medical Director, Rural Health Initiative</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Timeline -->
+      <section id="experience" class="experience-section">
+        <h3 class="section-title">Experience Timeline</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2023 - Present</div>
+            <div class="timeline-content">
+              <h4>Founder & Lead Developer</h4>
+              <div class="company">Akilify</div>
+              <p>Building AI-powered learning platform for African students. Led product design, development, and deployment serving 500+ active users.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022 - 2023</div>
+            <div class="timeline-content">
+              <h4>Founder & Product Lead</h4>
+              <div class="company">VerseELITE</div>
+              <p>Created poetry platform for African creators. Implemented payment systems and community features serving poets from 15 countries.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020 - 2022</div>
+            <div class="timeline-content">
+              <h4>Registered Nurse & Health Informatics</h4>
+              <div class="company">Lusaka General Hospital</div>
+              <p>Provided clinical care while developing digital tools for healthcare workflows. Created mobile apps for nursing protocols.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Chart -->
+      <div class="skills-chart-container">
+        <h4 class="section-title">Skills Proficiency</h4>
+        <canvas id="skillsChart"></canvas>
+      </div>
+
+      <!-- Modal for project details -->
+      <div id="modal" class="modal" aria-hidden="true" aria-labelledby="modalTitle" role="dialog">
+        <div class="modal-card">
+          <button class="close" id="closeBtn" aria-label="Close modal">×</button>
+          <div id="modalImage" class="modal-hero"></div>
+          <div class="modal-content">
+            <h3 id="modalTitle">Project Title</h3>
+            <div id="modalBadges" class="modal-badges"></div>
+            <p id="modalDesc" class="modal-desc">
+              <span class="short-desc">Short description...</span>
+              <span class="full-desc" style="display: none;">Full long description...</span>
+            </p>
+            <button class="read-more-btn" id="readMoreBtn">Read More</button>
+            <div class="modal-actions">
+              <a id="modalLive" class="cta" href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a id="modalCode" class="btn" href="#" target="_blank"><i class="fab fa-github"></i> View Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Section -->
+      <section id="blog">
+        <h3 class="section-title">Latest Articles</h3>
+        <div class="articles-grid">
+          <article class="article-card">
+            <h4>Building EdTech for Low-Connectivity Africa</h4>
+            <p>How we designed Akilify to work with intermittent internet and limited data plans while maintaining rich learning experiences.</p>
+            <a href="#"><i class="fas fa-arrow-right"></i> Read Article</a>
+          </article>
+          <article class="article-card">
+            <h4>Monetizing Creativity in Emerging Markets</h4>
+            <p>Lessons from building VerseELITE's payment system that integrates mobile money, bank transfers, and cryptocurrency.</p>
+            <a href="#"><i class="fas fa-arrow-right"></i> Read Article</a>
+          </article>
+          <article class="article-card">
+            <h4>From Nursing to Tech: My Career Transition</h4>
+            <p>How clinical experience informed my approach to building healthcare technology and user-centered design.</p>
+            <a href="#"><i class="fas fa-arrow-right"></i> Read Article</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="newsletter">
+        <h4>Stay Updated</h4>
+        <p>Get notified about new projects, articles, and updates on African tech innovation.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Your email" required>
+          <button type="submit" class="cta">Subscribe</button>
+        </form>
+      </section>
+
+      <section id="about" class="about">
+        <div class="bio">
+          <h3>About Me</h3>
+          <p>I'm John — a web developer, registered nurse, and founder building products for African learners and creators. I lead product design and engineering for Akilify and VerseELITE, and I write poetry and perform dance in my spare time.</p>
+          <p>My clinical experience gives me a unique perspective on usability and accessibility, especially for users in low-resource settings. I'm passionate about creating technology that's both powerful and approachable.</p>
+          
+          <div class="skills">
+            <h4 class="mt-4">Skills & Expertise</h4>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <div class="badge">Frontend Development</div>
+                <div class="badges mt-1">
+                  <span class="badge">HTML5</span>
+                  <span class="badge">CSS3</span>
+                  <span class="badge">JavaScript (ES6+)</span>
+                  <span class="badge">React</span>
+                  <span class="badge">Next.js</span>
+                  <span class="badge">Vue.js</span>
+                  <span class="badge">TypeScript</span>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <div class="badge">Backend & Databases</div>
+                <div class="badges mt-1">
+                  <span class="badge">Node.js</span>
+                  <span class="badge">Express</span>
+                  <span class="badge">MongoDB</span>
+                  <span class="badge">PostgreSQL</span>
+                  <span class="badge">Firebase</span>
+                  <span class="badge">REST APIs</span>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <div class="badge">Design & Product</div>
+                <div class="badges mt-1">
+                  <span class="badge">Figma</span>
+                  <span class="badge">UI/UX Design</span>
+                  <span class="badge">Product Strategy</span>
+                  <span class="badge">Wireframing</span>
+                  <span class="badge">Prototyping</span>
+                </div>
+              </div>
+              
+              <div class="skill-category">
+                <div class="badge">Healthcare & Other</div>
+                <div class="badges mt-1">
+                  <span class="badge">Clinical Nursing</span>
+                  <span class="badge">Health Informatics</span>
+                  <span class="badge">Project Management</span>
+                  <span class="badge">Team Leadership</span>
+                  <span class="badge">Public Speaking</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="side">
+          <h4>Contact & Links</h4>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <div style="font-weight: 600;">Email</div>
+                <div class="muted">mukuwa47@gmail.com</div>
+              </div>
+              <button class="copy-email-btn" aria-label="Copy email">
+                <i class="far fa-copy"></i>
+              </button>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fab fa-whatsapp"></i>
+              <div>
+                <div style="font-weight: 600;">WhatsApp</div>
+                <div class="muted">+260 0767175987</div>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <div style="font-weight: 600;">Location</div>
+                <div class="muted">Lusaka, Zambia</div>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <i class="fas fa-file-pdf"></i>
+              <div>
+                <div style="font-weight: 600;">CV/Resume</div>
+                <a href="https://drive.google.com/file/d/your-cv-id/view?usp=sharing" target="_blank" class="link cv-download">Download PDF</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://github.com/akilify" target="_blank" class="social-link github">
+              <i class="fab fa-github"></i>
+              <div>
+                <div style="font-weight: 600;">GitHub</div>
+                <div class="muted" style="font-size: 13px;">@akilify</div>
+              </div>
+            </a>
+            
+            <a href="www.linkedin.com/in/john-mukuwa-740b97392" target="_blank" class="social-link linkedin">
+              <i class="fab fa-linkedin"></i>
+              <div>
+                <div style="font-weight: 600;">LinkedIn</div>
+                <div class="muted" style="font-size: 13px;">John Mukuwa</div>
+              </div>
+            </a>
+            
+            <a href="https://twitter.com/johnmukuwa" target="_blank" class="social-link twitter">
+              <i class="fab fa-twitter"></i>
+              <div>
+                <div style="font-weight: 600;">Twitter</div>
+                <div class="muted" style="font-size: 13px;">@johnmukuwa</div>
+              </div>
+            </a>
+          </div>
+        </aside>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <h3 class="section-title">Get In Touch</h3>
+        <p>Interested in collaborating or have a project in mind? Reach out—I'm always open to discussing new opportunities, especially those that empower African communities through technology.</p>
+        
+        <div class="contact-buttons">
+          <a href="mukuwa47@gmail.com" class="contact-button email">
+            <i class="fas fa-envelope"></i>
+            Send me an Email
+          </a>
+          
+          <a href="https://wa.me/2600767175987" target="_blank" class="contact-button whatsapp">
+            <i class="fab fa-whatsapp"></i>
+            Message on WhatsApp
+          </a>
+        </div>
+        
+        <div class="contact-socials">
+          <a href="https://github.com/akilify" target="_blank">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="www.linkedin.com/in/john-mukuwa-740b97392" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://twitter.com/johnmukuwa" target="_blank">
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+          <a href="https://medium.com/@johnmukuwa" target="_blank">
+            <i class="fab fa-medium"></i> Medium
+          </a>
+        </div>
+      </section>
+
+      <footer>
+        <div>
+          © <span id="currentYear">2025</span> John Mukuwa. All rights reserved.
+        </div>
+        <div class="footer-links">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+          <a href="#blog">Blog</a>
+          <a href="https://drive.google.com/file/d/your-cv-id/view?usp=sharing" target="_blank">CV</a>
+          <a href="https://github.com/johnmukuwa/portfolio" target="_blank">View Source</a>
+        </div>
+        <div class="muted">Built with love in Lusaka, Zambia</div>
+      </footer>
+    </main>
+  </div>
+
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <script src="/js/main.min.js"></script>
+</body>
+</html>
